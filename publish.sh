@@ -1,4 +1,6 @@
 #!/bin/bash
+#NOT WORKING YET
+
 mv slides.slides.html  index.html
 mkdir -p /tmp/workspace
 cp -r * /tmp/workspace/
