@@ -1,0 +1,68 @@
+# Slides Notes
+
+2nd Try
+-------------------------------------------------------
+
+
+http://lab.hakim.se/reveal-js/#/
+ - html focussed
+ - looks nicer than remark (triangle control)
+ - online editor - slides.com
+
+https://remarkjs.com/#1
+ - markdown focussed
+		- http://blog.fladd.de/creating-web-based-presentations-with-markdown/
+		- 
+
+!! Jupyter (it apparently uses reveal)
+https://www.youtube.com/watch?v=EOpcxy0RA1A
+http://echorand.me/presentation-slides-with-jupyter-notebook.html#.WIOJSrEZNjV
+
+
+
+
+
+1st Try - remark
+-------------------------------------------------------
+Try this:
+```bash
+$ markdown-to-slides -d Slides.txt -o Slides.html  
+```  
+
+	
+## Remark  
+See the [remark project](https://github.com/gnab/remark)  
+
+## Helper  
+See the [markdown to Slides project](https://www.npmjs.com/package/markdown-to-slides)
+
+Install it  
+```bash
+npm install markdown-to-slides -g
+```
+
+### Basic usage
+```bash
+$ markdown-to-slides my_slides.md -o slideshow.html
+```
+Write my-file.md, correctly formated to be converted as slides, as slideshow.html.
+
+```bash
+$ markdown-to-slides -d my-file.md -o slideshow.html
+```
+The same, enabling the document mode.
+
+Options  
+--title, -t          Generated page title  
+--style, -s          Path to custom stylesheet  
+--script, -j         Path to custom javascript  
+--template, -l       Path to custom mustache template  
+--help, -h           This screen  
+--output-file, -o    Path to output file (stdout if not specified)  
+--document-mode, -d  Generate slides from a document without slide separators (---) or annotations  
+--watch, -w          Watch mode  
+--level              Heading level to use as new slides (for example 3 is ###)  
+--include-remark -i  Include Remark sources (around 850kB) into the generated document  
+
+## END
+
